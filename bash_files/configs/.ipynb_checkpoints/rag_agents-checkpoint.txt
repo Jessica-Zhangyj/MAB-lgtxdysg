@@ -1,0 +1,191 @@
+###### agent_config                                                              dataset_config
+
+###main experiments
+###BM25
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Simple_rag_gpt-4o-mini-bm25.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###contriever
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Embedding_rag_gpt-4o-mini-contriever.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###text_embedding_3_small
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_small.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###text_embedding_3_large
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Embedding_rag_gpt-4o-mini-text_embedding_3_large.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###hippo_rag_v2_nv
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Structure_rag_gpt-4o-mini-hippo_rag_v2_nv.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###raptor
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Structure_rag_gpt-4o-mini-raptor.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###graph-rag
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Structure_rag_gpt-4o-mini-graph-rag.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+###mem0
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Structure_rag_gpt-4o-mini-mem0.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+###cognee
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Structure_rag_gpt-4o-mini-cognee.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###self_rag
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Agentic_memory_gpt-4o-mini-self_rag.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###letta
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Accurate_Retrieval/EventQA/Eventqa_full.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Test_Time_Learning/ICL/ICL_banking77.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Test_Time_Learning/ICL/ICL_clinic150.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Test_Time_Learning/ICL/ICL_nlu.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Test_Time_Learning/ICL/ICL_trec_coarse.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Test_Time_Learning/ICL/ICL_trec_fine.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Long_Range_Understanding/InfBench_sum.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Conflict_Resolution/Factconsolidation_sh_262k.yaml
+Agentic_memory_gpt-4o-mini-letta.yaml                                      Conflict_Resolution/Factconsolidation_mh_262k.yaml
+
+
+###Zep
+Structure_rag_gpt-4o-mini-zep.yaml                     Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml                      
+Structure_rag_gpt-4o-mini-zep.yaml                     Accurate_Retrieval/Ruler/QA/Ruler_qa2_421k.yaml     
+Structure_rag_gpt-4o-mini-zep.yaml                     Accurate_Retrieval/LongMemEval/Longmemeval_s_star.yaml               
+Structure_rag_gpt-4o-mini-zep.yaml                     Accurate_Retrieval/EventQA/Eventqa_full.yaml                         
+Structure_rag_gpt-4o-mini-zep.yaml                     Test_Time_Learning/ICL/ICL_banking77.yaml                             
+Structure_rag_gpt-4o-mini-zep.yaml                     Test_Time_Learning/ICL/ICL_clinic150.yaml                             
+Structure_rag_gpt-4o-mini-zep.yaml                     Test_Time_Learning/ICL/ICL_nlu.yaml                                   
+Structure_rag_gpt-4o-mini-zep.yaml                     Test_Time_Learning/ICL/ICL_trec_coarse.yaml                           
+Structure_rag_gpt-4o-mini-zep.yaml                     Test_Time_Learning/ICL/ICL_trec_fine.yaml     
+Structure_rag_gpt-4o-mini-zep.yaml                     Test_Time_Learning/Recsys/Recsys_redial_full.yaml
+Structure_rag_gpt-4o-mini-zep.yaml                     Long_Range_Understanding/InfBench_sum.yaml
+Structure_rag_gpt-4o-mini-zep.yaml                     Conflict_Resolution/Factconsolidation_sh_262k.yaml                    
+Structure_rag_gpt-4o-mini-zep.yaml                     Conflict_Resolution/Factconsolidation_mh_262k.yaml                    

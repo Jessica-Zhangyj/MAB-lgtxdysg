@@ -141,7 +141,7 @@ def generate_agent_save_folder(agent_config, dataset_config, current_context_ind
     else:
         return _generate_default_agent_path(agent_config, dataset_config, current_context_index)
 
-#这一段把文本啥的喂给实例化的模型
+
 def initialize_and_memorize_agent(agent_config, dataset_config, agent_save_folder, 
                                  context_chunks, current_context_index, total_contexts_count):
     """

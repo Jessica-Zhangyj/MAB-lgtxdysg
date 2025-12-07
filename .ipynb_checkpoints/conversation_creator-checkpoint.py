@@ -67,7 +67,7 @@ class ConversationCreator:
         else:
             # Default to dataset chunk size
             return dataset_config['chunk_size']
-    #1.加载数据
+
     def _load_and_process_dataset(self, dataset_config):
         """
         Load the dataset and process it into contexts and query-answer pairs.
@@ -76,15 +76,15 @@ class ConversationCreator:
             dataset_config: Dataset configuration dictionary
         """
         logger.info(f"Running test on {self.sub_dataset}")
-      #2转换成列表格式
+
         # Load and convert dataset to processable format
         loaded_dataset = load_eval_data(dataset_config)
         dataset_items = self._convert_dataset_format(loaded_dataset)
         
         # Determine how many samples to process
-        num_samples_to_process = min(len(dataset_items), self.max_test_samples) #决定测试数量
+        num_samples_to_process = min(len(dataset_items), self.max_test_samples)
 
-        # Process each dataset item using list comprehension for better performance #转换为列表的目的
+        # Process each dataset item using list comprehension for better performance
         processed_items = [
             self._process_dataset_item(dataset_items[i]) 
             for i in range(num_samples_to_process)
@@ -99,7 +99,7 @@ class ConversationCreator:
         else:
             print("Dataset is empty - no samples found matching the filter criteria")
             raise ValueError(f"No samples found for sub_dataset: {self.sub_dataset}. Please check the dataset configuration.")
-     #转化为列表函数
+
     def _convert_dataset_format(self, loaded_dataset):
         """
         Convert dataset from various formats to a consistent list format.
@@ -114,7 +114,7 @@ class ConversationCreator:
         return (list(loaded_dataset['data']) 
                 if isinstance(loaded_dataset, dict) and 'data' in loaded_dataset 
                 else loaded_dataset)
-   #3.这部分是最重要的，它将一个原始数据集条目（Context + 一组 Q/A 数据）转换成 MAB 框架所需的格式。
+
     def _process_dataset_item(self, dataset_item):
         """
         Process a single dataset item to extract context and create query-answer pairs.
@@ -257,7 +257,7 @@ class ConversationCreator:
         return (field_value[question_index] 
                 if isinstance(field_value, list) and question_index < len(field_value)
                 else field_value)
-    4.#把记忆切成小块
+
     def get_chunks(self):
         """
         Get text chunks for all contexts, suitable for memory agent processing.

@@ -19,10 +19,6 @@ import logging
 import numpy as np
 from utils.eval_other_utils import metrics_summarization
 
-#把逻辑串起来
-
-#1.加载用户输入等参数
-
 # Configure logging
 logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
@@ -65,7 +61,6 @@ def has_reached_query_limit(max_queries, current_query_index):
     """Determine if we should stop processing due to reaching the query limit."""
     return max_queries > 0 and current_query_index >= max_queries
 
-#2.保存结果
 
 def save_results_to_file(output_path, agent_config, dataset_config, results, metrics, time_cost_list, start_time):
     """Save current results to the output file."""
@@ -95,7 +90,7 @@ def save_results_to_file(output_path, agent_config, dataset_config, results, met
         json.dump(output_data, file, indent=4)
     logger.info(f"Results saved at {output_path}")
 
-#3.处理过程
+
 def process_single_query(agent, query, answer, dataset_config, metrics, results, 
                         query_index, context_index, qa_pair_id=None):
     """Process a single query and update metrics and results."""
