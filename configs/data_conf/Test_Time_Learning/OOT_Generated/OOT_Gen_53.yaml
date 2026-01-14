@@ -1,0 +1,9 @@
+dataset: Test_Time_Learning
+sub_dataset: mixed_hard_oot
+file_path: data/oot_generated/oot_gen_53.txt
+name: oot_generated_53
+format: text
+seed: 120
+max_test_samples: 0
+split: test
+description: 'Mixed Hard Negative OOT #53'

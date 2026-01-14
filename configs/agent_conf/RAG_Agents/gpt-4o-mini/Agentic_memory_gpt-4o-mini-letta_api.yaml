@@ -1,5 +1,5 @@
 agent_name: Agentic_memory_letta_api
-model: gpt-4o-mini
+model: qwen/qwen3-8b
 text_embedding: text-embedding-3-small
 system_path: ./configs/agent_conf/letta_system.txt
 temperature: 0.7
@@ -9,3 +9,5 @@ output_dir: ./outputs/gpt-4o-mini-letta_api
 
 agent_chunk_size: 4096  #32768    
 letta_mode: api    #insert      #chat
+
+retrieve_num: 10

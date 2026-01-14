@@ -1,0 +1,9 @@
+dataset: Test_Time_Learning
+sub_dataset: ag_news_real_oot
+file_path: data/oot_generated/oot_gen_29.txt
+name: oot_generated_29
+format: text
+seed: 64
+max_test_samples: 0
+split: test
+description: 'Real AG News OOT dataset #29 (No Repetition)'

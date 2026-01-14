@@ -9,3 +9,5 @@ output_dir: ./outputs/gpt-4o-mini-letta_api
 
 agent_chunk_size: 4096  #32768    
 letta_mode: api    #insert      #chat
+
+retrieve_num: 10

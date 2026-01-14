@@ -22,7 +22,7 @@ LLM_HANDLE_OVERRIDES: Dict[str, Dict[str, str]] = {
         "gpt-4o-mini-2024-07-18": "gpt-4o-mini-jul",
     },
     "together": {
-        "Qwen/Qwen2.5-72B-Instruct-Turbo": "qwen-2.5-72b-instruct",
+        "qwen/qwen-2.5-72b-instruct": "qwen-2.5-72b-instruct",
         "meta-llama/Llama-3-70b-chat-hf": "llama-3-70b",
         "meta-llama/Meta-Llama-3-70B-Instruct-Turbo": "llama-3-70b-instruct",
         "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo": "llama-3.1-405b-instruct",

@@ -71,8 +71,17 @@ class EmbeddingConfig(BaseModel):
                 embedding_chunk_size=300,
                 embedding_endpoint_type="hugging-face",
             )
+        # else:
+        #     raise ValueError(f"Model {model_name} not supported.")
         else:
-            raise ValueError(f"Model {model_name} not supported.")
+            # 强制通过，默认视为 OpenAI 兼容的 Embedding
+            return cls(
+                embedding_endpoint_type="openai",
+                embedding_endpoint="https://openrouter.ai/api/v1", # 这里的地址会被环境变量覆盖
+                embedding_model=model_name,
+                embedding_dim=1536,  # text-embedding-3-small 的维度是 1536
+                embedding_chunk_size=8191
+            )
 
     def pretty_print(self) -> str:
         return (

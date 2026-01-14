@@ -2,6 +2,7 @@ agent_name: rag_bm25
 model: qwen/qwen3-8b
 agent_type: rag
 retrieve_num: 10
+
 temperature: 0.7
 max_tokens: 512
 input_length_limit: 3000000000
@@ -9,7 +10,6 @@ buffer_length: 200
 output_dir: ./outputs/glm-z1-9b
 
 
-retrieve_num: 10 
 
 #以下是重复记忆的添加
 REPEAT_ENABLED: false
@@ -19,10 +19,10 @@ DEFAULT_RETRIEVAL_CHUNK_REPEAT_RATIO: 0
 #以下是irrelevant部分添加
 use_irrelevant_memory: false
 irrelevant_chunk_enabled: end
-irrelevant_chunk_amount: 1  # number of unused chunks to append after retrieval for distraction attacks
+irrelevant_chunk_amount: 0  # number of unused chunks to append after retrieval for distraction attacks
 
 #一下是biased memory部分的添加
-use_biased_memory: true
+use_biased_memory: false
 
 #以下是memory injection的添加
 memory_attack_enabled: false

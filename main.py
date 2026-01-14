@@ -19,6 +19,8 @@ import logging
 import numpy as np
 from utils.eval_other_utils import metrics_summarization
 
+
+
 #把逻辑串起来
 
 #1.加载用户输入等参数
@@ -103,8 +105,12 @@ def process_single_query(agent, query, answer, dataset_config, metrics, results,
     agent_output = agent.send_message(query, memorizing=False, query_id=query_index, context_id=context_index)
     
     # Calculate metrics and update results
-    return metrics_summarization(agent_output, query, answer, dataset_config, metrics, results, query_index, qa_pair_id)
+    # return metrics_summarization(agent_output, query, answer, dataset_config, metrics, results, query_index, qa_pair_id)
 
+    #模拟真实memory系统
+    context_markers = dataset_config.get("context_markers", [])
+    marker = context_markers[context_index] if context_index < len(context_markers) else None
+    return metrics_summarization(agent_output, query, answer, dataset_config, metrics, results, query_index, qa_pair_id, marker)
 
 def unpack_query_data(query_data):
     """Unpack query data handling both old and new formats."""

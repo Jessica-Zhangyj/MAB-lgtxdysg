@@ -9,11 +9,11 @@ from utils.eval_data_utils import (
 )
 import time
 import re
-
+import os
 from langchain_openai import OpenAIEmbeddings, AzureOpenAIEmbeddings
 from langchain.embeddings.base import Embeddings
 from langchain_community.vectorstores import FAISS
-from langchain.schema import Document
+from langchain_core.documents import Document
 from tqdm import tqdm
 
 # Create a custom embedding class for Contriever
@@ -152,6 +152,25 @@ class  TextRetriever:
         self.vectorstore: FAISS = None
         self._current_documents = None
         
+    def save_vectorstore(self, path: str) -> None:
+        """Persist the current FAISS vectorstore to disk."""
+        if not self.vectorstore:
+            return
+        self.vectorstore.save_local(path)
+
+    def load_vectorstore(self, path: str) -> bool:
+        """Load a FAISS vectorstore from disk if available."""
+        if not path:
+            return False
+        if not os.path.isdir(path):
+            return False
+        self.vectorstore = FAISS.load_local(
+            path,
+            self.embedding_model,
+            allow_dangerous_deserialization=True,
+        )
+        return True
+        
     def build_vectorstore(self, documents: List[str]):
         """Build and cache the vector store from documents"""
         # Convert strings to Document objects if needed
@@ -190,6 +209,8 @@ class RAGSystem:
                  temperature,
                  max_tokens,
                  use_azure: bool = False,
+                 base_url: str = None, 
+                 api_key: str = None,
                  azure_endpoint: str = None,
                  azure_api_key: str = None,
                  azure_api_version: str = "2024-02-01"):

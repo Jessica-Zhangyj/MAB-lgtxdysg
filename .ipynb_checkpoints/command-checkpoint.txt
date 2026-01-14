@@ -1,0 +1,14 @@
+cd /root/autodl-tmp/MemoryAgentBench \
+&& python main.py \
+  --agent_config configs/agent_conf/RAG_Agents/gpt-4o-mini/Simple_rag_glm-z1-9b.yaml \
+  --dataset_config configs/data_conf/Accurate_Retrieval/Ruler/QA/Ruler_qa1_197k.yaml \
+  --chunk_size_ablation 512
+
+export HF_ENDPOINT=https://hf-mirror.com
+
+rm -rf outputs/glm-z1-9b/Accurate_Retrieval/
+
+python scripts/calc_attack_success.py /root/autodl-tmp/MemoryAgentBench/outputs/glm-z1-9b/Accurate_Retrieval/ruler_qa1_197K_unknown_in220000_size50_shots0_max_samples100_k10_chunk512_results.json \
+        --pattern "NA" --require-mismatch --case-insensitive
+
+export MEMORY_ATTACK_FORCE_ENABLE=1

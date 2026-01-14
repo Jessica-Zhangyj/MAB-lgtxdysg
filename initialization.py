@@ -161,6 +161,12 @@ def initialize_and_memorize_agent(agent_config, dataset_config, agent_save_folde
     # Initialize the agent wrapper
     agent = AgentWrapper(agent_config, dataset_config, load_agent_from=agent_save_folder)
     
+    # 如果你想每次运行 Letta 都重新注入数据，可以取消下面注释：
+    if "letta" in agent_config['agent_name'] and os.path.exists(agent_save_folder):
+        import shutil
+        print(f"Force removing existing Letta agent at {agent_save_folder} to ensure clean injection.")
+        shutil.rmtree(agent_save_folder)
+    
     # Handle memorization or loading based on whether saved state exists
     if os.path.exists(agent_save_folder):
         agent.load_agent()
@@ -341,6 +347,13 @@ def _generate_default_agent_path(agent_config, dataset_config, current_context_i
 def _memorize_context_chunks(agent, context_chunks, current_context_index, total_contexts_count):
     """Handle the memorization process for context chunks."""
     print("\n\n Agent Memorizing...\n\n")
+    
+    # [修改点]：针对 Letta Agent 进行特殊处理
+    # Letta 现在支持接收整个 List 进行批量注入，以保留 ConversationCreator 生成的 metadata
+    if "letta" in agent.agent_name:
+        print(f"Letta Agent detected: Batch injecting {len(context_chunks)} pre-augmented chunks...")
+        agent.send_message(context_chunks, memorizing=True)
+        return
     
     progress_description = f"Processing experiments {current_context_index + 1}/{total_contexts_count}"
     

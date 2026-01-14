@@ -164,8 +164,18 @@ class LLMConfig(BaseModel):
                 model_endpoint="https://inference.memgpt.ai",
                 context_window=8192,
             )
+        #else:
+            #raise ValueError(f"Model {model_name} not supported.")
+            # 👇 把原来的 else 部分删掉，换成这个：
         else:
-            raise ValueError(f"Model {model_name} not supported.")
+            # 遇到任何不认识的模型（比如 qwen），直接通过，默认当作 OpenAI 格式处理
+            return cls(
+                model=model_name,
+                model_endpoint_type="openai",
+                model_endpoint="https://openrouter.ai/api/v1", # 这里的地址会被环境变量覆盖，不用管
+                model_wrapper=None,
+                context_window=128000, # 默认给个大窗口，防止报错
+            )
 
     def pretty_print(self) -> str:
         return (
